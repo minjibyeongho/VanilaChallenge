@@ -21,6 +21,6 @@ LoginForm.addEventListener("submit", login);
 const userName = localStorage.getItem(USER_KEY);
 if( userName !== null ){
     LoginUser.classList.remove(HIDDEN_CLASS_NAME);
-    LoginUser.innerText = userName;
+    LoginUser.innerText = `Hello! ${userName}`;
     LoginForm.classList.add(HIDDEN_CLASS_NAME);
 }

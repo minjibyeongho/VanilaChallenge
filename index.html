@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Momentum</title>
 </head>
-<body background="./img/10.jpg">
-    <form id="login-form">
-        <input placeholder="write your name" required />
-    </form>
-    <h2 id="login-user" class="hidden"></h2>
-    <div id="clock-area">
-        <h3></h3>
+<body>
+    <div class="weather-wrapper">
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    <form id="todo">
-        <input required placeholder="what are you to do in today?" /> 
-    </form>
-    <ul id="todos" class="hidden"></ul>
-    <script src="./js/login.js"></script>
-    <script src="./js/clock.js"></script>
-    <script src="./js/backgroundChange.js"></script>
-    <sciprt src="./js/todo.js"></sciprt>
+    <div class="clock-warpper">
+        <div id="clock-area">
+            <h1></h1>
+        </div>
+    </div>
+    <div class="login-wrapper">
+        <form id="login-form">
+            <input placeholder="write your name" required />
+        </form>
+        <h2 id="login-user" class="hidden"></h2>
+    </div>
+    <div class="todo-warpper">
+        <div class="todo-from-wrapper">
+            <form id="todo-form">
+                <input placeholder="write to do!" required /> 
+            </form>
+        </div>
+        <div class="todo-list-warpper">
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    
+    
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/backgroundChange.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
